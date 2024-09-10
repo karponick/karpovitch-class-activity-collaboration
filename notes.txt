@@ -1,0 +1,13 @@
+1. Changed body margin to 0 to remove outer whitespace
+2. Added "float: left" to .product
+3. Added "margin: 10px" to .product
+4. Added "color: red" to a:hover
+   Changed href links to products to be different 
+5. Added "margin-top: 0" to h2
+6. This CSS clears the "float: left" property that we added to .product.
+   This is to prevent the footer from floating to the left of the final product.
+
+   Yacine
+   Rahul
+   Violet
+   Nick

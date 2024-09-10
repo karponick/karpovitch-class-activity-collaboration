@@ -1,0 +1,79 @@
+/* Basic styling */
+
+body {
+  font-family: Arial, sans-serif;
+  /* 1. Changed body margin to 0 to remove outer whitespace*/
+  margin: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* 5. Removed margin above h2 to remove whitespace above product names */
+h2 {
+  margin-top: 0
+}
+
+#product-list {
+  padding: 20px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 30%;
+  text-align: center;
+  /* 2. Added float to fix vertical stacking*/
+  float: left;
+  /* 3. Added margin to add space between products*/
+  margin: 10px;
+  /* Added a little extra padding at the bottom to account for
+  added padding on the Buy Now link "button" styling I added */
+  padding-bottom: 20px;
+}
+
+.product:hover {
+  /* Added more styling to hovering on products*/
+  border: 1px inset black;
+}
+
+/* Pseudo-classes for link behavior and order with errors */
+.product a {
+  color: blue;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.product a:hover {
+  /* 4. Changed color for hovered links*/
+  color: red;
+  /* Bonus?: Added extra styling to links to appear more "button-like"*/
+  background-color: yellow;
+  border: 1px solid darkred;
+  border-radius: 5px;
+}
+
+.product a:visited {
+  /* 4. Changed color for visited links*/
+  color: purple;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Clear floats to avoid parent collapse */
+#product-list::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Please use google to find out what this block of code is and why it is being used in this code */
